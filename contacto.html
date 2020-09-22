@@ -47,50 +47,69 @@
 	  		</li>
 		</ul>
 	</section>
-	<main class="contacto">
-		<form class="contacto__grilla">
-			<div class="contacto__grilla--estilo">
-				<label for="Nombre_y_Apellido">Nombre y Apellido</label>
-				<input type="text" name="Nombre_y_Apellido">
-			</div>
-			<div class="contacto__grilla--estilo">
-				<label for="Email">Email</label>
-				<input type="text" name="Email">
-			</div>
-			<div class="contacto__grilla--estilo">
-				<label for="Estado_Civil">Estado Civil</label>
-				<select name="Estado_Civil">
-					<option value="Soltero">Soltero/a</option>
-					<option value="Casado">Casado/a</option>
-					<option value="Divorciado">Divorciado/a</option>
-					<option value="Viudo">Viudo/a</option>
-				</select>
-			</div>
-			<div class="contacto__grilla--estilo2">
-				<label for="Productos">Sobre que productos desearias obtener informacion?</label>
-				<input type="checkbox" name="DoubleX">Double X
-				<input type="checkbox" name="Omega3">Omega 3
-				<input type="checkbox" name="ProteinaVegetal">Proteina Vegetal
-			</div>
-			<div class="contacto__grilla--estilo2">
-				<label for="Newsletter">Desea recibir Newsletter?</label>
-				<input type="radio" name="Newsletter">Si me encantaria!
-				<input type="radio" name="Newsletter">No, paso!
-			</div>
-			<div class="contacto__grilla--estilo2">
-				<label for="representantedemarca">Te gustaria informacion sobre la representacion de la marca Nutrilite™?</label>
-				<input type="radio" name="representantedemarca"> Si, dale!
-				<input type="radio" name="representantedemarca"> Por ahora no!
-			</div>
-			<div>
-				<textarea name="Comentario_Adicional" cols="30" rows="10" placeholder="Escribe aqui un comentario adicional" class="contacto__grilla__textarea"></textarea>
-			</div>
-			<div>
-				<input type="submit">
-				<input type="reset">
-			</div>
-		</form>
-	</main>
+		<div class="contacto">
+		  <div class="row contacto__header">
+		    <h1 class="contacto__header__titulo">CONTACT US</h1>
+		    <h4 class="contacto__header__subtitulo">Completa el formulario para que nos pongamos en contacto!</h4>
+		  </div>
+		  <div class="row body">
+		    <form action="#">
+		      <ul>   
+		        <li>
+		          <p class="left">
+		            <label for="first_name">Nombre</label>
+		            <input type="text" name="first_name"/>
+		          </p>
+		          <p class="pull-right">
+		            <label for="last_name">Apellido</label>
+		            <input type="text" name="last_name"/>      
+		          </p>
+		        </li> 
+		        <li>
+		          <p>
+		            <label for="email">Email <span class="req">*</span></label>
+		            <input type="email" name="email" placeholder="#@gmail.com" />
+		          </p>
+		        </li>        
+		        <li><div class="divider"></div></li>
+		        <li>
+		          <label for="comments">Comentarios</label>
+		          <textarea cols="46" rows="3" name="comments"></textarea>
+		        </li>
+		        <li>
+		          <input class="btn btn-submit" type="submit" value="Enviar" />
+		          <small>o presiona <strong>enter</strong></small>
+		        </li>
+		      </ul>
+		    </form>  
+		  </div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	<footer>
 		LO MEJOR DE LA CIENCIA Y LA NATURALEZA

@@ -13,6 +13,9 @@ h2 {
 h3 {
   color: #3ABD34; }
 
+h4 {
+  color: #fff; }
+
 p {
   color: #A19D9D; }
 
@@ -25,7 +28,6 @@ p {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  background-color: #1C1B1B;
   padding: 21px;
   margin: 0;
   border: #3ABD34 2px; }
@@ -59,59 +61,6 @@ footer {
 .cabecera {
   display: flex;
   flex-flow: row nowrap; }
-
-.contacto__grilla--estilo label {
-  font-family: 'Cantarell', sans-serif;
-  font-size: 20px; }
-
-.contacto__grilla--estilo input {
-  height: 50%;
-  width: 200px;
-  transition: all 2s;
-  font-size: 20px; }
-
-.contacto__grilla--estilo input:focus {
-  width: 80%;
-  font-size: 50px;
-  background: linear-gradient(to right, #A1F9CF, #A8FAFF); }
-
-.contacto__grilla--estilo select:focus {
-  width: 20px;
-  font-size: 20px;
-  background: linear-gradient(to right, #A1F9CF, #A8FAFF); }
-
-.contacto__grilla__textarea {
-  height: 200px;
-  width: 550px;
-  transition: all 2s; }
-
-.contacto__grilla__textarea:focus {
-  width: 100%;
-  height: 200px;
-  font-size: 24px;
-  background: linear-gradient(to right, #A1F9CF, #A8FAFF); }
-
-.contacto__grilla--estilo2 {
-  font-size: 20px; }
-
-.contacto__grilla--estilo2 label {
-  font-family: 'Cantarell', sans-serif;
-  font-size: 20px; }
-
-.contacto__grilla--estilo2 input {
-  transition: all 2s;
-  font-size: 20px; }
-
-.contacto__grilla--estilo2 input:focus {
-  width: 50px;
-  background: linear-gradient(to right, lightgreen, lightblue); }
-
-.contacto__grilla {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr,1fr,1fr;
-  height: 500px;
-  grid-column-gap: 10px; }
 
 .grilla3 {
   display: grid;
@@ -173,3 +122,133 @@ footer {
 .our-team-main:hover {
   border-color: #777;
   transition: 0.5s; }
+
+.contacto {
+  max-width: 510px;
+  min-width: 324px;
+  margin: 50px auto 0px;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+  border-bottom: 3px solid #ccc; }
+
+.row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em; }
+  .row.contacto__header {
+    padding: 1.5em 2.5em;
+    border-bottom: 1px solid #ccc;
+    background: url(https://www.mundo.sn2world.com/media/k2/items/cache/af73f6753c32a2f78af69d093219b829_L.jpg);
+    color: #fff; }
+  .row.body {
+    padding: .5em 2.5em 1em; }
+
+.pull-right {
+  float: right; }
+
+.contacto__header__titulo {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  font-weight: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 0 0.1em 0;
+  padding: 0 0 0.4em 0; }
+
+.contacto__header__subtitulo {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin: 1em 0 0.4em 0; }
+
+.btn {
+  font-size: 1.0625em;
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #fff;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  background-color: #b3b3b3;
+  border-bottom-color: #8c8c8c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+  .btn:hover {
+    background-color: #bfbfbf; }
+  .btn.btn-submit {
+    background-color: #6185E2;
+    border-bottom-color: #2656d0; }
+    .btn.btn-submit:hover {
+      background-color: #7796e6; }
+
+form {
+  max-width: 100%;
+  display: block; }
+  form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    form ul li {
+      margin: 0 0 0.25em 0;
+      clear: both;
+      display: inline-block;
+      width: 100%; }
+      form ul li:last-child {
+        margin: 0; }
+      form ul li p {
+        margin: 0;
+        padding: 0;
+        float: left; }
+        form ul li p.right {
+          float: right; }
+      form ul li .divider {
+        margin: 0.5em 0 0.5em 0;
+        border: 0;
+        height: 1px;
+        width: 100%;
+        display: block;
+        background-color: #6185E2;
+        background-image: linear-gradient(to right, #ee9cb4, #6185E2); }
+      form ul li .req {
+        color: #ee9cb4; }
+  form label {
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: #6185E2;
+    font-size: 1em; }
+  form input {
+    margin: 0 0 0.5em 0;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    color: #555;
+    font-size: 1em; }
+  form textarea {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    width: 100%;
+    color: #555; }
+  form small {
+    color: #6185E2;
+    margin: 0 0 0 0.5em; }
+
+@media only screen and (max-width: 480px) {
+  .pull-right {
+    float: none; }
+  input {
+    width: 100%; }
+  label {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    clear: both; }
+  li, p {
+    width: 100%; }
+  input.btn {
+    margin: 1.5em 0 0.5em; }
+  h1 {
+    font-size: 2.25em; }
+  h3 {
+    font-size: 1.125em; }
+  li small {
+    display: none; } }
