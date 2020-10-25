@@ -12,4 +12,4 @@ class Producto {
 	}
 }
 
-var producto1 = new Producto('doble X', 3700, 'multivitaminico natural', -5, 2) 
+var producto1 = new Producto('doble X', 3700, 'multivitaminico natural', 5, 2) 
