@@ -31,6 +31,8 @@ class Producto {
 }
 
 var producto1 = new Producto('doble X', 3700, 'multivitaminico natural', 5, 2); 
+var producto2 = new Producto('omega 3', 2000, 'aceite de pescado', 6, 5); 
+var producto3 = new Producto('proteina vegetal', 1900, '100% vegetal', 3, 1); 
 
 console.log('Stock antes de la compra ' + producto1.stock);
 console.log('Cantidades vendidas antes de la compra ' + producto1.cantidad_vendida);
@@ -45,5 +47,5 @@ console.log('La cantidad de dinero facturado es de ' + producto1.totalRecaudado(
 
 console.log(producto1._nombre);
 console.log(producto1.getName());
-producto1.setName('omega 3');
+producto1.setName('DOUBLE X');
 console.log(producto1.getName());
