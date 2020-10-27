@@ -57,7 +57,15 @@ producto1.setName('DOUBLE X');
 console.log(producto1.getName());
 
 var productosDisponiles = ["DobleX", "Proteina Vegetal", "Omega 3"];
+console.log(productosDisponiles);
+
 var productosNoDisponibles = ["CalMag D", "C Plus", "Lecitina E"];
+console.log(productosNoDisponibles);
 
 var todosLosProductos = productosDisponiles.concat(productosNoDisponibles);
 console.log(todosLosProductos);
+
+var cantidadDeProductos = console.log(todosLosProductos.length);
+
+var nuevoProductoDisponible = productosDisponiles.push("Daily Plus");
+console.log(productosDisponiles);
