@@ -138,7 +138,7 @@ function alertTarjeta(){
 		return true;
 	}
 
-	if (numerotarjeta.length === 8 && nombretarjeta.length > 15) {
+	if (numerotarjeta.length == 8 && nombretarjeta.length > 15) {
 		alert("El nombre no puede tener mas de 15 letras");
 	}else{
 		return true;
