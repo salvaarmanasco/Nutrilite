@@ -80,17 +80,17 @@ var inputVencimientoTarjeta = document.createElement('input');
 var inputCodSeguridadTarjeta = document.createElement('input');
 var inputDocumento = document.createElement('input');
 
-var btn = document.createElement('button');
+// var btn = document.createElement('button');
 
 // var checkboxDX = document.createElement('input')
 // checkboxDX.setAttribute('type', 'checkbox');
 
 
-inputNombreTarjeta.id = 'nombreTarjeta';
-inputNombreTarjeta.placeholder = 'Ingrese el nombre de la tarjeta';
+// inputNombreTarjeta.id = 'nombreTarjeta';
+// inputNombreTarjeta.placeholder = 'Ingrese el nombre de la tarjeta';
 
-inputNumeroTarjeta.id = 'numeroTarjeta';
-inputNumeroTarjeta.placeholder = 'Ingrese el numero de la tarjeta';
+// inputNumeroTarjeta.id = 'numeroTarjeta';
+// inputNumeroTarjeta.placeholder = 'Ingrese el numero de la tarjeta';
 
 inputVencimientoTarjeta.id = 'vencimientoTarjeta';
 inputVencimientoTarjeta.placeholder = 'Ingrese el vencimiento de la tarjeta';
@@ -101,14 +101,47 @@ inputCodSeguridadTarjeta.placeholder = 'Ingrese el codigo de la tarjeta';
 inputDocumento.id = 'documento';
 inputDocumento.placeholder = 'Ingrese su numero de DNI';
 
-btn.innerText = 'enviar';
 
 
 // formulario1.appendChild(checkboxDX);
-compra.appendChild(inputNombreTarjeta);
-compra.appendChild(inputNumeroTarjeta);
+
+// compra.appendChild(inputNombreTarjeta);
+// compra.appendChild(inputNumeroTarjeta);
 compra.appendChild(inputVencimientoTarjeta);
 compra.appendChild(inputCodSeguridadTarjeta);
 compra.appendChild(inputDocumento);
-compra.appendChild(btn);
+// compra.appendChild(btn);
+
+// Eventos
+
+// document.getElementById("nombreTarjeta").onchange = alertTarjeta();
+
+
+	// var numerodetarjeta = numeroTarjeta;
+
+function alertTarjeta(){
+	numerotarjeta=$('#numerotarjeta').val();
+
+	if (numerotarjeta.length > 8) {
+		alert("No puede ingresar mas de 8 digitos");
+	}else if (numerotarjeta.length < 8){
+		alert("No puede ingresar menos de 8 digitos");
+	}else{
+		return true;
+	}
+
+	nombretarjeta=$('#nombretarjeta').val();
+
+	if (nombretarjeta.length > 15) {
+		alert("El nombre no puede tener mas de 15 letras");
+	}else{
+		return true;
+	}
+
+	if (numerotarjeta.length === 8 && nombretarjeta.length > 15) {
+		alert("El nombre no puede tener mas de 15 letras");
+	}else{
+		return true;
+	}
+}
 
