@@ -74,26 +74,26 @@ console.log(productosDisponiles);
 
 //---------------------------------------DOM---------------------------------------------------//
 
-var compra = document.getElementById('compra');
+// var compra = document.getElementById('compra');
 
-var inputNombreTarjeta = document.createElement('input');
-var inputNumeroTarjeta = document.createElement('input');
-var inputVencimientoTarjeta = document.createElement('input');
-var inputCodSeguridadTarjeta = document.createElement('input');
-var inputDocumento = document.createElement('input');
+// var inputNombreTarjeta = document.createElement('input');
+// var inputNumeroTarjeta = document.createElement('input');
+// var inputVencimientoTarjeta = document.createElement('input');
+// var inputCodSeguridadTarjeta = document.createElement('input');
+// var inputDocumento = document.createElement('input');
 
-inputVencimientoTarjeta.id = 'vencimientoTarjeta';
-inputVencimientoTarjeta.placeholder = 'Ingrese el vencimiento de la tarjeta';
+// inputVencimientoTarjeta.id = 'vencimientoTarjeta';
+// inputVencimientoTarjeta.placeholder = 'Ingrese el vencimiento de la tarjeta';
 
-inputCodSeguridadTarjeta.id = 'codigoTarjeta';
-inputCodSeguridadTarjeta.placeholder = 'Ingrese el codigo de la tarjeta';
+// inputCodSeguridadTarjeta.id = 'codigoTarjeta';
+// inputCodSeguridadTarjeta.placeholder = 'Ingrese el codigo de la tarjeta';
 
-inputDocumento.id = 'documento';
-inputDocumento.placeholder = 'Ingrese su numero de DNI';
+// inputDocumento.id = 'documento';
+// inputDocumento.placeholder = 'Ingrese su numero de DNI';
 
-compra.appendChild(inputVencimientoTarjeta);
-compra.appendChild(inputCodSeguridadTarjeta);
-compra.appendChild(inputDocumento);
+// compra.appendChild(inputVencimientoTarjeta);
+// compra.appendChild(inputCodSeguridadTarjeta);
+// compra.appendChild(inputDocumento);
 
 
 //----------------------------------Eventos---------------------------------------------------//
@@ -125,3 +125,12 @@ function alertTarjeta(evento){
 		return true;
 	}
 }
+
+//----------------------------------JQuery---------------------------------------------------//
+
+
+$("#botoncontacto").click(function() {
+	alert("Gracias por enviarnos tu informacion");
+});
+
+
