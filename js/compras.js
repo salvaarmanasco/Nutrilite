@@ -98,12 +98,59 @@ console.log(productosDisponiles);
 
 //----------------------------------Eventos---------------------------------------------------//
 
-window.onload = () => {
-	document.getElementById('forms').addEventListener('submit', alertTarjeta);
-}
+// window.onload = () => {
+// 	document.getElementById('forms').addEventListener('submit', alertTarjeta);
+// }
 
 
-function alertTarjeta(evento){
+// function alertTarjeta(evento){
+// 	numerotarjeta=$('#numerotarjeta').val();
+// 	nombretarjeta=$('#nombretarjeta').val();
+
+// 	if(numerotarjeta.length == 8 && nombretarjeta.length > 15) {
+// 		alert("El nombre no puede tener mas de 15 letras");
+// 	}else if(numerotarjeta.length > 8 && nombretarjeta.length > 15) {
+// 		alert("El nombre no puede tener mas de 15 letras");
+// 		alert("No puede ingresar mas de 8 digitos");
+// 	}else if(numerotarjeta.length < 8 && nombretarjeta.length > 15) {
+// 		alert("El nombre no puede tener mas de 15 letras");
+// 		alert("No puede ingresar menos de 8 digitos");
+// 	} else if (numerotarjeta.length > 8) {
+// 		alert("No puede ingresar mas de 8 digitos");
+// 	}else if (numerotarjeta.length < 8){
+// 		alert("No puede ingresar menos de 8 digitos");
+// 	}else if (nombretarjeta.length > 15) {
+// 		alert("El nombre no puede tener mas de 15 letras");
+// 	} else {
+// 		return true;
+// 	}
+// }
+
+//----------------------------------JQuery---------------------------------------------------//
+
+$("#numerotarjeta").change(function() {
+	$ ("#numerotarjeta").css("border", "2px solid green");
+	// $ ("#nombretarjeta").css("border", "2px solid green");
+});
+
+$("#nombretarjeta").change(function() {
+	$ ("#nombretarjeta").css("border", "2px solid green");
+});
+
+$("#vencimientotarjeta").change(function() {
+	$ ("#vencimientotarjeta").css("border", "2px solid green");
+});
+
+$("#codigoseguridad").change(function() {
+	$ ("#codigoseguridad").css("border", "2px solid green");
+});
+
+$("#documentoidentidad").change(function() {
+	$ ("#documentoidentidad").css("border", "2px solid green");
+});
+
+$("#botoncompra").click(function() {
+
 	numerotarjeta=$('#numerotarjeta').val();
 	nombretarjeta=$('#nombretarjeta').val();
 
@@ -122,15 +169,7 @@ function alertTarjeta(evento){
 	}else if (nombretarjeta.length > 15) {
 		alert("El nombre no puede tener mas de 15 letras");
 	} else {
-		return true;
+		alert("Gracias por tu compra!");
 	}
-}
-
-//----------------------------------JQuery---------------------------------------------------//
-
-
-$("#botoncontacto").click(function() {
-	alert("Gracias por enviarnos tu informacion");
 });
-
 
