@@ -72,65 +72,10 @@ var cantidadDeProductos = console.log(todosLosProductos.length);
 var nuevoProductoDisponible = productosDisponiles.push("Daily Plus");
 console.log(productosDisponiles);
 
-//---------------------------------------DOM---------------------------------------------------//
-
-// var compra = document.getElementById('compra');
-
-// var inputNombreTarjeta = document.createElement('input');
-// var inputNumeroTarjeta = document.createElement('input');
-// var inputVencimientoTarjeta = document.createElement('input');
-// var inputCodSeguridadTarjeta = document.createElement('input');
-// var inputDocumento = document.createElement('input');
-
-// inputVencimientoTarjeta.id = 'vencimientoTarjeta';
-// inputVencimientoTarjeta.placeholder = 'Ingrese el vencimiento de la tarjeta';
-
-// inputCodSeguridadTarjeta.id = 'codigoTarjeta';
-// inputCodSeguridadTarjeta.placeholder = 'Ingrese el codigo de la tarjeta';
-
-// inputDocumento.id = 'documento';
-// inputDocumento.placeholder = 'Ingrese su numero de DNI';
-
-// compra.appendChild(inputVencimientoTarjeta);
-// compra.appendChild(inputCodSeguridadTarjeta);
-// compra.appendChild(inputDocumento);
-
-
-//----------------------------------Eventos---------------------------------------------------//
-
-// window.onload = () => {
-// 	document.getElementById('forms').addEventListener('submit', alertTarjeta);
-// }
-
-
-// function alertTarjeta(evento){
-// 	numerotarjeta=$('#numerotarjeta').val();
-// 	nombretarjeta=$('#nombretarjeta').val();
-
-// 	if(numerotarjeta.length == 8 && nombretarjeta.length > 15) {
-// 		alert("El nombre no puede tener mas de 15 letras");
-// 	}else if(numerotarjeta.length > 8 && nombretarjeta.length > 15) {
-// 		alert("El nombre no puede tener mas de 15 letras");
-// 		alert("No puede ingresar mas de 8 digitos");
-// 	}else if(numerotarjeta.length < 8 && nombretarjeta.length > 15) {
-// 		alert("El nombre no puede tener mas de 15 letras");
-// 		alert("No puede ingresar menos de 8 digitos");
-// 	} else if (numerotarjeta.length > 8) {
-// 		alert("No puede ingresar mas de 8 digitos");
-// 	}else if (numerotarjeta.length < 8){
-// 		alert("No puede ingresar menos de 8 digitos");
-// 	}else if (nombretarjeta.length > 15) {
-// 		alert("El nombre no puede tener mas de 15 letras");
-// 	} else {
-// 		return true;
-// 	}
-// }
-
 //----------------------------------JQuery---------------------------------------------------//
 
 $("#numerotarjeta").change(function() {
 	$ ("#numerotarjeta").css("border", "2px solid green");
-	// $ ("#nombretarjeta").css("border", "2px solid green");
 });
 
 $("#nombretarjeta").change(function() {
