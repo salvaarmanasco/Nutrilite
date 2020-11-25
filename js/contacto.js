@@ -88,7 +88,8 @@ function validaForm(){
 
 $(document).ready( function() {   // Esta parte del código se ejecutará automáticamente cuando la página esté lista.
     $("#botonenviar").click( function() {     // Con esto establecemos la acción por defecto de nuestro botón de enviar.
-        if(validaForm()){                               // Primero validará el formulario.
+        if(validaForm(event)){ 
+        	event.preventDefault();                              // Primero validará el formulario.
             $.get("json/datos.json",$("#formdata").serialize(),function(res){
                 $("#formulario").fadeOut("slow");   // Hacemos desaparecer el div "formulario" con un efecto fadeOut lento.
                 if(res == 1){
