@@ -18,4 +18,5 @@ $(document).ready(function(){
 		}else{
 			$("#contenidos_externos").html("<p> Usuario invalido </p>");
 		}
-}
+	}
+});	
