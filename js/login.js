@@ -2,7 +2,7 @@
 
 
 $(document).ready(function(){
-	$("#login".submit(function(){
+	$("#login").submit(function(){
 
 		var datosFormulario=$(this).serialize();
 
