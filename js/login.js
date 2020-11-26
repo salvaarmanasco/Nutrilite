@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 		var datosFormulario=$(this).serialize();
 
-		$.get("php/login.php", datosFormulario, procesarDatos);
+		$.get("login.php", datosFormulario, procesarDatos);
 
 		return false;
 
