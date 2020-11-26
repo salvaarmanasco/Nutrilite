@@ -1,0 +1,19 @@
+{
+	"products": [
+		{
+			"nombre": "multivitaminico Doble X",
+			"duracion": "2 meses",
+			"precio": "3405"
+		}
+		{
+			"nombre": "Omega 3 Plus",
+			"duracion": "3 meses",
+			"precio": "2000"
+		}
+		{
+			"nombre": "Proteina Vegetal",
+			"duracion": "2,5 meses",
+			"precio": "1920"
+		}
+	]
+}
