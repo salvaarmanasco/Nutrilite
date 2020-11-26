@@ -3,11 +3,13 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Representacion de marca || Nutrilite</title>
-	<meta name="keywords" content="Nutrilite, nutricion, salud, suplementos, organico, dieta, bajar, peso, adelgazar, energia, vitalidad, natural, naturaleza, vender, representar, representacion">
+	<title>Login || Nutrilite</title>
+	<meta name="keywords" content="Nutrilite, nutricion, salud, suplementos, organico, dieta, bajar, peso, adelgazar, energia, vitalidad, natural, naturaleza, productos">
 	<meta name="description" content="Si visitas nuestra web, vas a encontrar la mejor informacion sobre la marca numero 1 en suplementos organicos. Tenemos lo mejor de la ciencia junto con lo mejor de la naturaleza">
 	<link rel="stylesheet" href="bootstrapcss/bootstrap.min.css">
 	<link rel="stylesheet" href="practicascss/css/prueba.css">
+	<script defer src="js/login.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -29,7 +31,7 @@
 	   		<a class="nav-link" href="productos.html">Productos</a>
 			</li>
 	  		<li class="nav-item">
-	   			<a class="nav-link active" href="representantedemarca.html">Representante de Marca</a>
+	   			<a class="nav-link" href="representantedemarca.html">Representante de Marca</a>
 	 		</li>
 	 		<li class="nav-item">
 	    		<a class="nav-link" href="historia.html" tabindex="-1" aria-disabled="true">Historia</a>
@@ -41,7 +43,7 @@
 	    		<a class="nav-link" href="compras.html" tabindex="-1" aria-disabled="true">Compras</a>
 	  		</li>
 	  		<li class="nav-item">
-	    		<a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">Login</a>
+	    		<a class="nav-link active" href="login.html" tabindex="-1" aria-disabled="true">Login</a>
 	  		</li>
 	 		<li class="nav-item dropdown">
 	    		<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visita</a>
@@ -54,26 +56,34 @@
 	  		</li>
 		</ul>
 	</section>
-	<main class="repdemarca">
-		<h2 class="repdemarca__titulo">Representantes de Marca</h2>
-		<h3 class="repdemarca__subtitulo">Que es un RDM?</h3>
-			<p class="repdemarca__subtitulo__cuerpo">Es una persona habilitada a comercializar la marca Nutrilite™ y que trabaja conjuntamente con un/a empresario Amway™.</p>
-		<h3 class="repdemarca__subtitulo">Cuanto es el beneficio que obtengo?</h3>
-			<div class="repdemarca__subtitulo__cuerpo">
-				<p>Margen del 25% de ganancias (segun el precio de cada producto)</p>
-				<p>Posibilidad de ganar un viaje "Experiencia de Liderazgo"
-				una vez por año a un lugar especial de America Latina. El viaje no tiene ningun costo.</p>
-				<p>Kit "Representation" que consta de:
-				- 1 Remera "Nutrilite"
-				- 1 Gorra "Doule X"
-				- 1 Vaso Mezclador "Body Key"\</p>
+	<section>
+	 	<form method="get" action="login.php" id="login">
+	 		<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<label for="usuario">Usuario:</label>
+						<input type="text" name="usuario" id="usuario" autofocus>
+					</div>
+				</div>
 			</div>
-		<h3 class="repdemarca__subtitulo">Como inicio?</h3>
-			<p class="repdemarca__subtitulo__cuerpo">Dejanos tu informacion en la seccion <a href="contacto.html">Contacto</a>!</p>
-		<div class="embed-responsive embed-responsive-16by9">
- 			<iframe width="560" height="315" src="https://www.youtube.com/embed/UvdXe_gNrnU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	</main>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<label for="contra">Contraseña:</label>
+						<input type="text" name="contra" id="contra" autofocus>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<input type="submit" name="boton" value="enviar" id="boton">
+					</div>
+				</div>
+			</div>
+		</form>
+	</section>
+	<div id="contenidos_externos"></div>
 	<footer>
 		LO MEJOR DE LA CIENCIA Y LA NATURALEZA
 	</footer>
