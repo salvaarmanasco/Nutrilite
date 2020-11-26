@@ -19,4 +19,4 @@ $(document).ready(function(){
 			$("#contenidos_externos").html("<p> Usuario invalido </p>");
 		}
 	}
-});	
+});
