@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 		return false;
 
-	};
+	});
 
 	function procesarDatos(datos_devueltos) {
 		if(datos_devueltos=="autorizado"){
