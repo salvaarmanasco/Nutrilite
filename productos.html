@@ -8,7 +8,7 @@
 	<meta name="description" content="Si visitas nuestra web, vas a encontrar la mejor informacion sobre la marca numero 1 en suplementos organicos. Tenemos lo mejor de la ciencia junto con lo mejor de la naturaleza">
 	<link rel="stylesheet" href="bootstrapcss/bootstrap.min.css">
 	<link rel="stylesheet" href="practicascss/css/prueba.css">
-	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script defer src="js/precios.js"></script>
 </head>
 <body>
 	<header>
@@ -36,9 +36,7 @@
 	  		</li>
 	  		 <li class="nav-item">
 	    		<a class="nav-link" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
-	  		<li class="nav-item">
-	    		<a class="nav-link" href="precios.html" tabindex="-1" aria-disabled="true">Precios</a>
-			  </li>
+			 </li>
 	  		<li class="nav-item">
 	    		<a class="nav-link" href="compras.html" tabindex="-1" aria-disabled="true">Compras</a>
 	  		</li>
@@ -71,7 +69,7 @@
 				</ul>
 				<!-- Contratar / Comprar -->
 				<div class="table-buy">
-					<a href="#" class="pricing-action">Comprar</a>
+					<button class="pricing-action boton-precios">COMPRAR</button>
 				</div>
 			</div>
 			<div class="pricing-table recommended">
@@ -87,7 +85,7 @@
 				</ul>
 				<!-- Contratar / Comprar -->
 				<div class="table-buy">
-					<a href="#" class="pricing-action">Comprar</a>
+					<button class="pricing-action boton-precios">COMPRAR</button>
 				</div>
 			</div>
 			<div class="pricing-table">
@@ -102,7 +100,7 @@
 				</ul>
 				<!-- Contratar / Comprar -->
 				<div class="table-buy">
-					<a href="#" class="pricing-action">Comprar</a>
+					<button class="pricing-action boton-precios">COMPRAR</button>
 				</div>
 			</div>
 		</div>
@@ -133,11 +131,14 @@
 	    		<span class="sr-only bg-dark">Next</span>
 	  		</a>
 		</div>
-	</main>
+			<div class="container">
+				  <div id="lista-precios"></div>
+			</div>
 	<footer>
 		LO MEJOR DE LA CIENCIA Y LA NATURALEZA
 	</footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,38 +1,27 @@
-// $("#boton-precios").on("click", getPrices);
 
-// function getPrices() {
-//   $.get('https://reqres.in/api/users', function(respuesta) {
+$(".boton-precios").on("click", getPrices);
 
-//     var listaPrecios = $("#lista-precios");
+function getPrices() {
+  $.ajax({
+    url: 'json/productos.json',
+    success: function(respuesta) {
 
-//     $.each(respuesta.data, function(index, elemento) {
-//       listaPrecios.append(
-//           '<div>'
-//         +     '<p>' + elemento.first_name + ' ' + elemento.last_name + '</p>'
-//         +     '<img src=' + elemento.avatar + '></img>'
-//         + '</div>'
-//       );    
-//     });
-
-//   });
-// }
-
-
-$("#boton-usuarios").on("click", getUsers);
-
-function getUsers() {
-  $.get('https://reqres.in/api/users', function(respuesta) {
-
-    var listaUsuarios = $("#lista-usuarios");
-
-    $.each(respuesta.data, function(index, elemento) {
-      listaUsuarios.append(
-          '<div>'
-        +     '<p>' + elemento.first_name + ' ' + elemento.last_name + '</p>'
-        +     '<img src=' + elemento.avatar + '></img>'
-        + '</div>'
-      );    
-    });
-
+      var listaPrecios = $("#lista-precios");
+      $.each(respuesta.data, function(index, elemento) {
+        listaPrecios.append(
+            '<div>'
+          +     '<p>' + elemento.nombre + '</p>'
+          +     '<p>' + elemento.precio_al_contado + '</p>'
+          +     '<p>' + elemento.precio_x3_unidades + '</p>'
+          +     '<p>' + elemento.precio_dolares_unidad + '</p>'
+          +     '<img src=' + elemento.avatar + '></img>'
+          + '</div>',
+            '<div>'
+        );    
+      });
+    },
+    error: function() {
+      console.log("No se ha podido obtener la información");
+    }
   });
 }
