@@ -1,1 +1,19 @@
-[{"name":"salva","lastname":"armanasco"},{"name":"santi","lastname":"bonetto"}]
+{
+    "productos": {
+        "proteina vegetal": {
+            "precio al contado": "$1920",
+            "precio x3 unidades": "$5500",
+            "precio dolares unidad": "U$D11.30"
+        },
+        "doble X": {
+            "precio al contado": "$3400",
+            "precio x3 unidades": "$9500",
+            "precio dolares unidad": "20"
+        },
+        "omega 3": {
+            "precio al contado": "$2000",
+            "precio x3 unidades": "$5500",
+            "precio dolares unidad": "U$D11.80"
+        }
+    }
+}
