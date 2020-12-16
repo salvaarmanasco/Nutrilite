@@ -2,21 +2,21 @@
     "data": [
         {
             "nombre": "PROTEINA VEGETAL NUTRILITE",
-            "precio_al_contado": "$1920",
+            "precio_al_contado": "$2000",
             "precio_x3_unidades": "$5500",
             "precio_dolares_unidad": "U$D11.30",
             "avatar":"https://images.rappi.com/products/2090666827-1564585043.png?d=136x136&e=webp"
         },
         {
             "nombre": "MULTIVITAMINICO DOUBLE X",
-            "precio_al_contado": "$3400",
+            "precio_al_contado": "$3900",
             "precio_x3_unidades": "$9500",
             "precio_dolares_unidad": "U$D20",
             "avatar":"https://images.rappi.com/products/2090666822-1564076518073.png?d=136x136"
         },
         {
             "nombre": "OMEGA 3 PLUS",
-            "precio_al_contado": "$2000",
+            "precio_al_contado": "$2200",
             "precio_x3_unidades": "$5500",
             "precio_dolares_unidad": "U$D11.80",
             "avatar":"https://images.rappi.com/products/2090666816-1564076518006.png?d=200x200&e=webp"

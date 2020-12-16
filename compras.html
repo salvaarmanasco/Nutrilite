@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="practicascss/css/prueba.css">
 	<script defer src="js/compras.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="practicascss/css/compras.css">
 </head>
 
 <body>
@@ -52,51 +53,71 @@
 	  		</li>
 		</ul>
 	</section>
- 	<form action="" id="forms">
+	<div class="container">
+		<div class="row">
+			<!-- Elementos generados a partir del JSON -->
+			<main id="items" class="col-sm-8 row"></main>
+			<!-- Carrito -->
+			<aside class="col-sm-4">
+				<h2>Carrito</h2>
+				<!-- Elementos del carrito -->
+				<ul id="carrito" class="list-group"></ul>
+				<hr>
+				<!-- Precio total -->
+				<p class="text-right">Total: <span id="total"></span>$;</p>
+				<button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+			</aside>
+		</div>
+	</div>
+ 	<!-- <form action="" id="forms">
  		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<input type="number" name="numerotarjeta" id="numerotarjeta" value="" placeholder="Ingrese el numero de la tarjeta" autofocus>
+					<input type="number" name="numerotarjeta" id="numerotarjeta" value="" placeholder="Ingrese el numero de la tarjeta" autofocus required>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<input type="text" name="nombretarjeta" id="nombretarjeta" value=""  placeholder="Ingrese el nombre de la tarjeta" >
+					<input type="text" name="nombretarjeta" id="nombretarjeta" value=""  placeholder="Ingrese el nombre de la tarjeta" required>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<input type="number" name="vencimientotarjeta" id="vencimientotarjeta" value="" placeholder="Ingrese el vencimiento de la tarjeta">
+					<input type="number" name="vencimientotarjeta" id="vencimientotarjeta" value="" placeholder="Ingrese el vencimiento de la tarjeta" required>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<input type="text" name="codigoseguridad" id="codigoseguridad" value=""  placeholder="Ingrese el codigo de seguridad" >
+					<input type="text" name="codigoseguridad" id="codigoseguridad" value=""  placeholder="Ingrese el codigo de seguridad" required>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<input type="text" name="documentoidentidad" id="documentoidentidad" value=""  placeholder="Ingrese su DNI" >
+					<input type="text" name="documentoidentidad" id="documentoidentidad" value=""  placeholder="Ingrese su DNI" required>
 				</div>			
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<input type="submit" value="enviar" id="botoncompra">
+					<input type="submit" value="comprar" id="botoncompra">
 				</div>
 			</div>
 		</div>
 	</form>
-	<form action="" id="compra"></form>
+	<form action="" id="compra"></form> -->
+	  
+	<footer>
+		LO MEJOR DE LA CIENCIA Y LA NATURALEZA
+	</footer>'
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
