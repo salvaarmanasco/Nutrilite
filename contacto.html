@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="practicascss/css/prueba.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<script defer src="js/contacto.js"></script>
+	<link rel="stylesheet" href="practicascss/css/contacto.css">
 </head>
 <body>
 	<header>
@@ -52,46 +53,9 @@
 	  		</li>
 		</ul>
 	</section>
-
-
-
-		<div class="contacto">
-		  <div class="row contacto__header">
-		    <h1 class="contacto__header__titulo">CONTACTANOS</h1>
-		    <h4 class="contacto__header__subtitulo">Completa el formulario para que nos pongamos en contacto!</h4>
-		  </div>
-		  <div class="row body" id="formulario">
-		    <form action="#" id="formdata">
-		      <ul>   
-		        <li>
-		          <p class="left">
-		            <label for="first_name">Nombre</label>
-		            <input type="text" name="first_name" id="nombre" required="required" />
-		          </p>
-		          <p class="pull-right">
-		            <label for="last_name">Apellido</label>
-		            <input type="text" name="last_name" id="apellido" required="required" />      
-		          </p>
-		        </li> 
-		        <li>
-		          <p>
-		            <label for="email">Email <span class="req">*</span></label>
-		            <input type="email" name="email" placeholder="#@gmail.com" id="email" required="required" />
-		          </p>
-		        </li>        
-		        <li><div class="divider"></div></li>
-		        <li>
-		          <label for="comments">Comentarios</label>
-		          <textarea cols="46" rows="3" name="comments" id="comentarios"></textarea>
-		        </li>
-		        <li>
-		        	<input class="btn btn-submit" id="botoncontacto" type="submit" value="Enviar">	          
-		         	 <small>o presiona <strong>enter</strong></small>
-		        </li>
-		      </ul>
-		    </form>  
-		  </div>
-		</div>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vpcQv6fWBVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  	</div>
         <div id="exito" style="display:none">
             Sus datos han sido recibidos con éxito.
         </div>
@@ -99,6 +63,21 @@
             Se ha producido un error durante el envío de datos.
         </div>	
 
+		<div id="contact">Contactanos</div>
+
+		<div id="contactForm">
+		
+		  <h1>Dejanos tu informacion</h1>
+		  <small>Te responderemos lo antes posible</small>
+		  
+		  <form action="#">
+			<input placeholder="Nombre y Apellido" type="text" required />
+			<input placeholder="Email" type="email" required />
+			<textarea placeholder="Comentario"></textarea>
+			<input class="formBtn" type="submit" />
+			<input class="formBtn" type="reset" />
+		  </form>
+		</div>
 	<footer>
 		LO MEJOR DE LA CIENCIA Y LA NATURALEZA
 	</footer>
