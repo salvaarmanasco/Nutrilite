@@ -1,122 +1,122 @@
 
-// class Producto {
-// 	constructor(nombre, precio, descripcion, stock, cantidadVendida) {
-// 		if (precio < 0 || stock < 0 || cantidadVendida < 0) throw new Error("Ha habido un error en la creacion del producto")
+class Producto {
+	constructor(nombre, precio, descripcion, stock, cantidadVendida) {
+		if (precio < 0 || stock < 0 || cantidadVendida < 0) throw new Error("Ha habido un error en la creacion del producto")
 
-// 		var _nombre = nombre;
-// 		var _stock = stock;
-// 		this.cantidadVendida = cantidadVendida;
-// 		this.precio = precio;
-// 		this.descripcion = descripcion;
+		var _nombre = nombre;
+		var _stock = stock;
+		this.cantidadVendida = cantidadVendida;
+		this.precio = precio;
+		this.descripcion = descripcion;
 
-// 		console.log('producto creado exitosamente');
+		console.log('producto creado exitosamente');
 
-// 		this.getName = function() {return _nombre}
-// 		this.setName = function(nuevoNombre) {
-// 			if(nuevoNombre === '') throw new Error("Debes insertar un nombre")
-// 			_nombre = nuevoNombre
-// 		}
-// 		this.getStock = function() {return _stock}
-// 		this.setStock = function(nuevoStock) {
-// 			if(nuevoStock < 0) throw new Error("El stock no puede ser negativo")
-// 			_stock = nuevoStock
-// 		} 
-// 		this.compraDeProducto = function(cantidad) {
-// 			if(cantidad < 1) throw new Error("No podes comprar menos de 1 producto");
-// 			_stock = _stock - cantidad;
-// 			this.cantidadVendida = cantidadVendida + cantidad;
-// 		}
-// 	this.totalRecaudado = function() {
-// 		return this.precio * this.cantidadVendida;
-// 		}
-// 	}
-// }
+		this.getName = function() {return _nombre}
+		this.setName = function(nuevoNombre) {
+			if(nuevoNombre === '') throw new Error("Debes insertar un nombre")
+			_nombre = nuevoNombre
+		}
+		this.getStock = function() {return _stock}
+		this.setStock = function(nuevoStock) {
+			if(nuevoStock < 0) throw new Error("El stock no puede ser negativo")
+			_stock = nuevoStock
+		} 
+		this.compraDeProducto = function(cantidad) {
+			if(cantidad < 1) throw new Error("No podes comprar menos de 1 producto");
+			_stock = _stock - cantidad;
+			this.cantidadVendida = cantidadVendida + cantidad;
+		}
+	this.totalRecaudado = function() {
+		return this.precio * this.cantidadVendida;
+		}
+	}
+}
  
-// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// var producto1 = new Producto('doble X', 3700, 'multivitaminico natural', 5, 2); 
-// var producto2 = new Producto('omega 3', 2000, 'aceite de pescado', 6, 5); 
-// var producto3 = new Producto('proteina vegetal', 1900, '100% vegetal', 3, 1); 
+var producto1 = new Producto('doble X', 3700, 'multivitaminico natural', 5, 2); 
+var producto2 = new Producto('omega 3', 2000, 'aceite de pescado', 6, 5); 
+var producto3 = new Producto('proteina vegetal', 1900, '100% vegetal', 3, 1); 
 
-// console.log('Stock antes de la compra ' + producto1.getStock());
-// console.log('Cantidades vendidas antes de la compra ' + producto1.cantidadVendida);
-
-
-// producto1.compraDeProducto(5);
-// console.log("Compra de producto1");
-
-// console.log('Stock despues de la compra ' + producto1.getStock());
-// console.log('Cantidades vendidas despues de la compra ' + producto1.cantidadVendida);
-
-// console.log('La cantidad de dinero facturado es de ' + producto1.totalRecaudado());
+console.log('Stock antes de la compra ' + producto1.getStock());
+console.log('Cantidades vendidas antes de la compra ' + producto1.cantidadVendida);
 
 
+producto1.compraDeProducto(5);
+console.log("Compra de producto1");
 
-// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// console.log(producto1._nombre);
-// console.log(producto1.getName());
-// producto1.setName('DOUBLE X');
-// console.log(producto1.getName());
+console.log('Stock despues de la compra ' + producto1.getStock());
+console.log('Cantidades vendidas despues de la compra ' + producto1.cantidadVendida);
 
-// var productosDisponiles = ["DobleX", "Proteina Vegetal", "Omega 3"];
-// console.log(productosDisponiles);
+console.log('La cantidad de dinero facturado es de ' + producto1.totalRecaudado());
 
-// var productosNoDisponibles = ["CalMag D", "C Plus", "Lecitina E"];
-// console.log(productosNoDisponibles);
 
-// var todosLosProductos = productosDisponiles.concat(productosNoDisponibles);
-// console.log(todosLosProductos);
 
-// var cantidadDeProductos = console.log(todosLosProductos.length);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+console.log(producto1._nombre);
+console.log(producto1.getName());
+producto1.setName('DOUBLE X');
+console.log(producto1.getName());
 
-// var nuevoProductoDisponible = productosDisponiles.push("Daily Plus");
-// console.log(productosDisponiles);
+var productosDisponiles = ["DobleX", "Proteina Vegetal", "Omega 3"];
+console.log(productosDisponiles);
 
-// //----------------------------------JQuery---------------------------------------------------//
+var productosNoDisponibles = ["CalMag D", "C Plus", "Lecitina E"];
+console.log(productosNoDisponibles);
 
-// $("#numerotarjeta").change(function() {
-// 	$ ("#numerotarjeta").css("border", "2px solid green");
-// });
+var todosLosProductos = productosDisponiles.concat(productosNoDisponibles);
+console.log(todosLosProductos);
 
-// $("#nombretarjeta").change(function() {
-// 	$ ("#nombretarjeta").css("border", "2px solid green");
-// });
+var cantidadDeProductos = console.log(todosLosProductos.length);
 
-// $("#vencimientotarjeta").change(function() {
-// 	$ ("#vencimientotarjeta").css("border", "2px solid green");
-// });
+var nuevoProductoDisponible = productosDisponiles.push("Daily Plus");
+console.log(productosDisponiles);
 
-// $("#codigoseguridad").change(function() {
-// 	$ ("#codigoseguridad").css("border", "2px solid green");
-// });
+//----------------------------------JQuery---------------------------------------------------//
 
-// $("#documentoidentidad").change(function() {
-// 	$ ("#documentoidentidad").css("border", "2px solid green");
-// });
+$("#numerotarjeta").change(function() {
+	$ ("#numerotarjeta").css("border", "2px solid green");
+});
 
-// $("#botoncompra").click(function() {
+$("#nombretarjeta").change(function() {
+	$ ("#nombretarjeta").css("border", "2px solid green");
+});
 
-// 	numerotarjeta=$('#numerotarjeta').val();
-// 	nombretarjeta=$('#nombretarjeta').val();
+$("#vencimientotarjeta").change(function() {
+	$ ("#vencimientotarjeta").css("border", "2px solid green");
+});
 
-// 	if(numerotarjeta.length == 8 && nombretarjeta.length > 15) {
-// 		alert("El nombre no puede tener mas de 15 letras");
-// 	}else if(numerotarjeta.length > 8 && nombretarjeta.length > 15) {
-// 		alert("El nombre no puede tener mas de 15 letras");
-// 		alert("No puede ingresar mas de 8 digitos");
-// 	}else if(numerotarjeta.length < 8 && nombretarjeta.length > 15) {
-// 		alert("El nombre no puede tener mas de 15 letras");
-// 		alert("No puede ingresar menos de 8 digitos");
-// 	} else if (numerotarjeta.length > 8) {
-// 		alert("No puede ingresar mas de 8 digitos");
-// 	}else if (numerotarjeta.length < 8){
-// 		alert("No puede ingresar menos de 8 digitos");
-// 	}else if (nombretarjeta.length > 15) {
-// 		alert("El nombre no puede tener mas de 15 letras");
-// 	} else {
-// 		alert("Gracias por tu compra!");
-// 	}
-// });
+$("#codigoseguridad").change(function() {
+	$ ("#codigoseguridad").css("border", "2px solid green");
+});
+
+$("#documentoidentidad").change(function() {
+	$ ("#documentoidentidad").css("border", "2px solid green");
+});
+
+$("#botoncompra").click(function() {
+
+	numerotarjeta=$('#numerotarjeta').val();
+	nombretarjeta=$('#nombretarjeta').val();
+
+	if(numerotarjeta.length == 8 && nombretarjeta.length > 15) {
+		alert("El nombre no puede tener mas de 15 letras");
+	}else if(numerotarjeta.length > 8 && nombretarjeta.length > 15) {
+		alert("El nombre no puede tener mas de 15 letras");
+		alert("No puede ingresar mas de 8 digitos");
+	}else if(numerotarjeta.length < 8 && nombretarjeta.length > 15) {
+		alert("El nombre no puede tener mas de 15 letras");
+		alert("No puede ingresar menos de 8 digitos");
+	} else if (numerotarjeta.length > 8) {
+		alert("No puede ingresar mas de 8 digitos");
+	}else if (numerotarjeta.length < 8){
+		alert("No puede ingresar menos de 8 digitos");
+	}else if (nombretarjeta.length > 15) {
+		alert("El nombre no puede tener mas de 15 letras");
+	} else {
+		alert("Gracias por tu compra!");
+	}
+});
 
 
 
@@ -271,3 +271,6 @@ $botonVaciar.addEventListener('click', vaciarCarrito);
 
 // Inicio
 renderItems();
+
+
+
